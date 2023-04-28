@@ -1,0 +1,162 @@
+/* Este modifica el body haciendolo ocupar una altura establecida */
+
+html, body {
+    height: 95%;
+    margin: 0;
+}
+
+/* Este agrega color de fondo, tamaño de letra y centra vertical y horizontalmente al body */
+
+body {
+    background-color: #EAEDED;
+    font-size: 150%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centra el contenedor del titulo de la página */
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* le coloca al titulo un tamaño de letra, un margen, un color y en negrilla  */
+
+.titulo {
+    font-size: 300%;
+    margin: 10px;
+    color: #27AE60;
+    font-weight: 700;
+}
+
+/* Este centra todo el formulario */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+/* Este coloca al formulario un color de fondo, un margen interno, centra los elementos, coloca un borde redondeado sombreado y un ancho */
+
+form {
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    border-radius: 3%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+
+/* Este aplica al input y al button un ancho, un alto, un tamaño de letra y un borde */
+
+input, button {
+    width: 95%;
+    height: 40px;
+    font-size: 80%;
+    border: solid 1px #E5E8E8;
+}
+
+/* Este quita el enfoque del borde al escribir, coloca un redondeado del borde, un margen interno y color al texto */
+
+input {
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    color: white;
+}
+
+/* Este hace que al escribir el color del fonde y del texto cambien */
+
+input:focus {
+    color: black;
+    background-color: white;
+}
+
+/* Este hace que al terminar de escribir el color de texto se mantenga */
+
+input:valid{
+    color: black;
+}
+
+/* Este coloca al boton un color de fondo, un color y tamaño al texto, una animación, un borde redondeado, negrilla y un alto */
+
+button {
+    background-color: #27AE60;
+    color: white;
+    font-size: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    font-weight: 700;
+    height: 50px;
+}
+
+/* Este hara que al pasar el cursor sobre el boton cambien de color y el diseño de puntero */
+
+button:hover {
+    background-color: #229954;
+    cursor: pointer;
+}
+
+/* Este coloca un color y tamaño al enlace ademas quita el subrayado */
+
+a {
+    text-decoration: none;
+    font-size: 70%;
+    color: #27AE60;
+}
+
+/* Este coloca subrayado al pasar el cursor sobre el */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Este coloca un color, un margen interno y un borde redondeado al mensaje de salida al enviar el formualrio */
+
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Este coloca un color de fondo al mostrar el mensaje de formulario enviado */
+
+#mensaje-enviado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 9999;
+}
+
+/* Este centra vertical y horizontalmente el mensaje de formulario enviado y agrega un color de texto */
+
+#mensaje-enviado .contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+/* este agrega color, tamaño negrilla a la letra y un difuminado al fondo */
+
+.errormensaje {
+    color: black;
+    font-size: 100%;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+
+/* Este coloca un tamaño de letra a una parte del mensaje de formulario enviado */
+
+.errorexp {
+    font-size: 70%;
+}
